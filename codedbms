@@ -1,0 +1,14 @@
+CREATE DATABASE pizzashop;
+
+USE pizzashop;
+
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(100),
+    customer_email VARCHAR(100),
+    pizza_name VARCHAR(100),
+    pizza_size VARCHAR(20),
+    quantity INT,
+    toppings VARCHAR(255),
+    total_price DOUBLE
+);
